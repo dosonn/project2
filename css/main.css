@@ -65,6 +65,20 @@ ol {
   margin: 0 auto;
 }
 
+.summary__title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.summary__desc {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #767676;
+}
+
 .btn {
   position: relative;
   display: flex;
@@ -103,6 +117,7 @@ ol {
   padding: 0 10px;
   font-size: 16px;
   border: 1px solid #ddd;
+  background-color: #fff;
   border-radius: 5px;
   outline: none;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -223,4 +238,78 @@ header .sub-menu li a:hover {
   height: 24px;
   cursor: pointer;
   text-indent: -9999px;
+}
+
+/* Visual */
+.section--visual {
+  position: relative;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.section--visual::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section--visual .inner {
+  padding: 160px 0;
+  display: flex;
+}
+
+.section--visual .summary {
+  flex: 1;
+  margin-right: 90px;
+}
+
+.section--visual .summary__title {
+  font-size: 54px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
+}
+
+.section--visual .summary__desc {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
+}
+
+#sign-form {
+  width: 340px;
+  margin-top: 16px;
+}
+
+#sign-form li {
+  margin-bottom: 17px;
+}
+
+#sign-form li:last-child {
+  margin-bottom: 0;
+}
+
+#sign-form .input--text {
+  width: 100%;
+  height: 40px;
+}
+
+#sign-form .caption {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  text-align: center;
+}
+
+#sign-form .btn--primary {
+  width: 100%;
+  height: 62px;
+  padding: 0 25px;
+  font-size: 20px;
+  justify-content: center;
 }
