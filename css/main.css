@@ -238,6 +238,9 @@ header .sub-menu li a:hover {
   height: 24px;
   cursor: pointer;
   text-indent: -9999px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
 }
 
 /* Visual */
